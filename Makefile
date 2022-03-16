@@ -3,6 +3,9 @@ page-loader:
 
 package-install:
 	python3 -m pip install --user dist/*.whl --force-reinstall
+	
+install:
+	poetry install
 
 test:
 	poetry run pytest --cov=page_loader --cov-report xml
